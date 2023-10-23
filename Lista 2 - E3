@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  int cn[10], qn[10], i;
+
+  printf("Digite o conjunto com dez numeros: \n");
+  for(i=0; i<10; i++){
+  scanf("%d", &cn[i]);
+  } for (i=0; i<10; i++){
+  qn[i] = cn[i]*cn[i];
+  }
+  printf("O conjuto de número é :");
+  for(i=0; i<10; i++){
+  printf("%d ", cn[i]);
+  }
+  printf("\nOs numéros do conjuto elevado ao quadrado é : ");
+  for(i=0; i<10; i++){
+  printf("%d ", qn[i]);
+  }
+  return 0;
+}

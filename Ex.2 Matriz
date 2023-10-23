@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define N 3
+int main(void) {
+ float matriz[N][N], soma1, soma2, soma3;
+int i, j;
+printf("\n\x1b[47mDigite a matriz a ser calculando:\n\x1b[0m");
+for (i=0;i<N;i++){ 
+ for (j=0; j<N; j++){
+    printf("\n\x1b[95mDigite o termo associado a linha %d e coluna %d da matriz:\x1b[0m ",i+1,j+1);
+    scanf("%f", &matriz[i][j]);
+    }
+    
+  }
+  soma1=matriz[0][0]+matriz[1][0]+matriz[2][0];
+  soma2=matriz[0][1]+matriz[1][1]+matriz[2][1];
+  soma3=matriz[0][2]+matriz[1][2]+matriz[2][2];
+  printf("\x1b[96m\n\nArray: %.f\n\n\x1b[0m", soma1);
+printf("\x1b[96m\nArray: %.f\n\n\x1b[0m", soma2);
+printf("\x1b[96m\nArray: %.f\n\n\x1b[0m", soma3);
+  return 0;
+}
